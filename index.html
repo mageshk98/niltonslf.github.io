@@ -8,8 +8,12 @@
   <title>Nilton Lopes - Portfólio</title>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/index.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <!-- build:css css/index.css -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- endbuild -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,600" rel="stylesheet">
 
 </head>
 
@@ -20,15 +24,16 @@
     <header class="header">
       <section class="about-author">
         <picture>
-          <source media="(min-width:960px)" srcset="img/niltonlopes-large.jpg 1x">
-          <source media="(min-width:600px)" srcset="img/niltonlopes-medium.jpg 1x">
-          <img src="img/niltonlopes-small.jpg" alt="Nilton Lopes" class="author-picture">
+          <source media="(min-width:960px)" srcset="images/niltonlopes-large.jpg 1x">
+          <source media="(min-width:600px)" srcset="images/niltonlopes-medium.jpg 1x">
+          <img src="images/niltonlopes-small.jpg" alt="Nilton Lopes" class="author-picture">
         </picture>
 
         <div class="author-description">
-          <p>Olá, eu sou</p>
-          <h1>Nilton lopes</h1>
-          <p>Desenvolvedor front-end, estudante de ciência da computação, análise e desevolvimento de sistemas e, apaixonado
+          <h1 class="title-primary author-title">Nilton
+            <span>lopes</span>
+          </h1>
+          <p>Desenvolvedor front-end, estudante de ciência da computação, análise e desevolvimento de sistemas. Eterno apaixonado
             pelo mundo web e mobile.</p>
         </div>
 
@@ -38,41 +43,58 @@
       <!-- social networks -->
       <ul class="social-links">
         <li class="facebook">
-          <a href="#">facebook</a>
+          <a href="https://www.facebook.com/niltonslf" target="_blank">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
         </li>
         <li class="twitter">
-          <a href="#">Twitter</a>
+          <a href="https://twitter.com/niltonrck" target="_blank">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
         </li>
         <li class="linkedin">
-          <a href="#">Linkedin</a>
+          <a href="#">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
         </li>
         <li class="github">
-          <a href="#">Github</a>
+          <a href="https://github.com/niltonslf" target="_blank">
+            <i class="fab fa-github  fa-2x"></i>
+          </a>
         </li>
+       
         <li class="mail">
-          <a href="#">Mail</a>
+          <a href="mailto:nilton@republicadocodigo.com.br" target="_blank">
+            <i class="fas fa-at fa-2x"></i>
+          </a>
         </li>
       </ul>
 
     </header>
 
-    <section class="container">
+    <div class="content-main">
 
       <!-- My works -->
       <section class="works">
-        <h1 class="title-section">Some Works</h1>
-        <p class="subtitle-section">some works developed by me</p>
+        <h2 class="title-primary title-section">Meus
+          <span>jobs</span>
+        </h2>
+        <p class="subtitle-primary subtitle-section ">Alguns trabalhos e projetos meus que gostaria de compartilhar</p>
 
         <div class="card-list">
-          <article class="card">
-            
-            <img src="img/escola21.png" alt="Escola 21">
+          <article class="card-item">
+            <picture>
+              <source media="(min-width:960px)" srcset="images/escola21-large.png 1x">
+              <source media="(min-width:600px)" srcset="images/escola21-medium.png 1x">
+              <img src="images/escola21-small.png" alt="Job: Escola21" class="card-cover">
+            </picture>
 
             <div class="card-content">
-              <h1>Escola 21</h1>
-              <p>Ladding page promocional</p>
+              <h3 class="card-title">Escola 21</h3>
+              <a href="#" class="card-link">
+                <i class="fas fa-globe"></i> escola21.com.br</a>
 
-              <ul class="tags">
+              <ul class="card-tags">
                 <li>Front-end</li>
                 <li>mobile</li>
                 <li>css</li>
@@ -81,22 +103,171 @@
               </ul>
             </div>
           </article>
+          <!-- item -->
+          <article class="card-item">
+            <picture>
+              <source media="(min-width:960px)" srcset="images/guiness-large.jpg 1x">
+              <source media="(min-width:600px)" srcset="images/guiness-medium.jpg 1x">
+              <img src="images/guiness-small.jpg" alt="Job: Colégio Guiness" class="card-cover">
+            </picture>
+
+            <div class="card-content">
+              <h3 class="card-title">Colégio Guiness</h3>
+              <a href="#" class="card-link">
+                <i class="fas fa-globe"></i> iegui.com.br</a>
+
+              <ul class="card-tags">
+                <li>Front-end</li>
+                <li>mobile</li>
+                <li>css</li>
+                <li>html</li>
+                <li>javscript</li>
+              </ul>
+            </div>
+          </article>
+          <!-- item -->
+          <article class="card-item">
+            <picture>
+              <source media="(min-width:960px)" srcset="images/beco-large.jpg 1x">
+              <source media="(min-width:600px)" srcset="images/beco-medium.jpg 1x">
+              <img src="images/beco-small.jpg" alt="Job: Beco Rap" class="card-cover">
+            </picture>
+
+            <div class="card-content">
+              <h3 class="card-title">Beco Rap</h3>
+              <a href="#" class="card-link">
+                <i class="fas fa-globe"></i> becorap.com.br</a>
+
+              <ul class="card-tags">
+                <li>Front-end</li>
+                <li>mobile</li>
+                <li>css</li>
+                <li>html</li>
+                <li>javscript</li>
+              </ul>
+            </div>
+          </article>
+          <!-- item -->
+          <article class="card-item">
+            <picture>
+              <source media="(min-width:960px)" srcset="images/ceavjr-large.jpg 1x">
+              <source media="(min-width:600px)" srcset="images/ceavjr-medium.jpg 1x">
+              <img src="images/ceavjr-small.jpg" alt="Job: Colégio ceavjr" class="card-cover">
+            </picture>
+
+            <div class="card-content">
+              <h3 class="card-title">Colégio Ceavjr</h3>
+              <a href="#" class="card-link">
+                <i class="fas fa-globe"></i>ceavjr.com.br</a>
+
+              <ul class="card-tags">
+                <li>Front-end</li>
+                <li>back-end</li>
+                <li>mobile</li>
+                <li>css</li>
+                <li>html</li>
+                <li>javscript</li>
+                <li>Php</li>
+                <li>mysql</li>
+              </ul>
+            </div>
+          </article>
+          <!-- item -->
+          <article class="card-item">
+            <picture>
+              <source media="(min-width:960px)" srcset="images/realize-large.png 1x">
+              <source media="(min-width:600px)" srcset="images/realize-medium.png 1x">
+              <img src="images/realize-small.png" alt="Job: realize consultoria" class="card-cover">
+            </picture>
+
+            <div class="card-content">
+              <h3 class="card-title">Realize Consultoria</h3>
+              <a href="#" class="card-link">
+                <i class="fas fa-globe"></i> realizemkt.com.br</a>
+
+              <ul class="card-tags">
+                <li>Front-end</li>
+                <li>mobile</li>
+                <li>css</li>
+                <li>html</li>
+                <li>javscript</li>
+                <li>Php</li>
+              </ul>
+            </div>
+          </article>
+
+
         </div>
 
 
       </section>
 
       <!-- My skills -->
-      <section class="skills">
-        <h1 class="title-section">Skills</h1>
-        My skills here
+      <section class="skills container">
+        <h2 class="title-primary title-section">Minhas
+          <span>Skills</span>
+        </h2>
+        <p class="subtitle-primary">Algumas das minhas habilidades e conhecimentos</p>
+
+
+        <div class="card-list">
+
+          <article class="card-item skill-item">
+            <span class="icon-svg html"></span>
+            <h3 class="skill-title">Html</h3>
+          </article>
+
+          <article class="card-item skill-item">
+            <span class="icon-svg javascript"></span>
+            <h3 class="skill-title">Javascript</h3>
+          </article>
+
+          <article class="card-item skill-item">
+            <span class="icon-svg mobile"></span>
+            <h3 class="skill-title">Mobile</h3>
+          </article>
+
+          <article class="card-item skill-item">
+            <span class="icon-svg mysql"></span>
+            <h3 class="skill-title">mysql</h3>
+          </article>
+
+          <article class="card-item skill-item">
+            <span class="icon-svg php"></span>
+            <h3 class="skill-title">php</h3>
+          </article>
+
+          <article class="card-item skill-item">
+            <span class="icon-svg mobile"></span>
+            <h3 class="skill-title">Mobile</h3>
+          </article>
+
+          <article class="card-item skill-item">
+            <span class="icon-svg javascript"></span>
+            <h3 class="skill-title">Javascript</h3>
+          </article>
+
+          <article class="card-item skill-item">
+            <span class="icon-svg mysql"></span>
+            <h3 class="skill-title">mysql</h3>
+          </article>
+
+
+        </div>
 
       </section>
 
-
-    </section>
+    </div>
+    <!-- End content-main -->
   </div>
+  <!-- end wrap -->
 
+
+  <!-- build:js js/index.js -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/fontawesome-all.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
 </body>
 
 </html>
