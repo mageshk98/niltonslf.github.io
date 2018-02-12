@@ -1,0 +1,62 @@
+/* 
+    Classes 
+*/ 
+.title-primary {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: $font-primary;
+    text-transform: uppercase;
+    line-height: 0.8em;
+    margin-top: 30px;
+    & span {
+        display: block;
+        font-weight: lighter;
+        letter-spacing: 0.55em;
+        font-size: 0.7em;
+    }
+}
+
+.title-section {
+    text-align: center;
+    & span {
+        margin-left: 20px;
+        letter-spacing: 0.5em;
+    }
+}
+
+.subtitle-primary {
+    text-align: center;
+}
+
+.title-alternative{
+    font-family: $font-primary;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    padding-left: 10px;
+
+    &:before{
+        content: "";
+        background: black;
+        display: inline-block;
+        width: 5px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+
+/*Alert boxes*/
+.alert{
+    padding: 15px;
+    background: #cecece;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.alert-success{
+    background: #188f40;
+    color: white;
+}

@@ -1,0 +1,62 @@
+.contact {
+    background: url(../images/code-large.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px $spacing-default;
+    position: relative;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .title-contact {
+        font-family: $font-primary;
+        margin: 0 auto;
+    }
+    .content {
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 5;
+        text-align: center;
+    }
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.contact-links a {
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 901px) {
+    .contact {
+        .title-contact {
+            margin: 0 ;
+        }
+    }
+    .contact-links {
+        justify-content: flex-end;
+    }
+}
